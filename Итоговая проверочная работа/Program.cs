@@ -1,4 +1,11 @@
-﻿string[] Array = CreateArray();
+﻿Start();
+string[] Array = CreateArray();
+
+void Start()
+{
+    Console.Clear();
+    System.Console.WriteLine("Итоговая проверочная работа");
+}
 
 string[] CreateArray()
 {
