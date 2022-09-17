@@ -1,5 +1,6 @@
 ﻿Start();
 string[] Array = CreateArray();
+ShortWord(Array);
 
 void Start()
 {
@@ -9,17 +10,21 @@ void Start()
 
 string[] CreateArray()
 {
-    Console.WriteLine("Введите матрицу: ");
-    string? Text = Console.ReadLine();
-    Text = Text.Replace(",", "");
-    Text = Text.Replace(".", "");
+    Console.WriteLine("Введите длину массива: ");
+    int Length = Convert.ToInt32(Console.ReadLine());
 
-    string[] array = Text.Split(" ");
-    string[] ar = new string[array.Length];
-
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < Length - 1; i++)
     {
-        ar[i] = Convert.ToString(array[i]);
+        System.Console.WriteLine($"Введите {i + 1} набор символов: ");
+        string? Array[i + 1]
     }
-    return ar;
+}
+
+void ShortWord(string[] Array)
+{
+    int max = 3;
+    for (int i = 0; i < Array.Length; i++)
+    {
+
+    }
 }
