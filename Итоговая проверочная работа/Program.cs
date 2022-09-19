@@ -29,9 +29,10 @@ string[] CreateArray()
 
 void ShortWord(string[] Array)
 {
+    int max = 3;
     for (int i = 0; i < Array.Length; i++)
     {
-        if (Array[i].Length <= 3)
+        if (Array[i].Length <= max)
         {
             if (i != Array.Length - 1)
             {
